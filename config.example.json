@@ -1,0 +1,8 @@
+{
+  "bind": "127.0.0.1:8080",
+  "dataDir": "/absolute/private/messagebox-data",
+  "identityKeyFile": "/absolute/private/identity.key",
+  "freeBoxes": ["inbox"],
+  "enableWebSockets": true,
+  "corsMode": "disabled"
+}

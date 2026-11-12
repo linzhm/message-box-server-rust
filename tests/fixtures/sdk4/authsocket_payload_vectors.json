@@ -1,0 +1,828 @@
+{
+  "sourceBlob": "802dc0e77555a493cc4953c4fff28dbde14f1ecc",
+  "cases": [
+    {
+      "input": {
+        "label": "missing",
+        "eventName": "joinRoom",
+        "hasData": false
+      },
+      "encoded": "7b226576656e744e616d65223a226a6f696e526f6f6d227d",
+      "decoded": {
+        "eventName": "joinRoom"
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "null",
+        "eventName": "joinRoom",
+        "hasData": true,
+        "data": null
+      },
+      "encoded": "7b226576656e744e616d65223a226a6f696e526f6f6d222c2264617461223a6e756c6c7d",
+      "decoded": {
+        "eventName": "joinRoom",
+        "data": null
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "string",
+        "eventName": "joinRoom",
+        "hasData": true,
+        "data": "room-猫"
+      },
+      "encoded": "7b226576656e744e616d65223a226a6f696e526f6f6d222c2264617461223a22726f6f6d2de78cab227d",
+      "decoded": {
+        "eventName": "joinRoom",
+        "data": "room-猫"
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "object",
+        "eventName": "message",
+        "hasData": true,
+        "data": {
+          "z": "猫",
+          "a": [
+            true,
+            null,
+            42,
+            -3
+          ]
+        }
+      },
+      "encoded": "7b226576656e744e616d65223a226d657373616765222c2264617461223a7b227a223a22e78cab222c2261223a5b747275652c6e756c6c2c34322c2d335d7d7d",
+      "decoded": {
+        "eventName": "message",
+        "data": {
+          "z": "猫",
+          "a": [
+            true,
+            null,
+            42,
+            -3
+          ]
+        }
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "escapes",
+        "eventName": "notice",
+        "hasData": true,
+        "data": "\u0000\b\f\n\r\t\"\\ 😀"
+      },
+      "encoded": "7b226576656e744e616d65223a226e6f74696365222c2264617461223a225c75303030305c625c665c6e5c725c745c225c5ce280a8f09f9880227d",
+      "decoded": {
+        "eventName": "notice",
+        "data": "\u0000\b\f\n\r\t\"\\ 😀"
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "safe-maximum",
+        "eventName": "n",
+        "hasData": true,
+        "data": 9007199254740991
+      },
+      "encoded": "7b226576656e744e616d65223a226e222c2264617461223a393030373139393235343734303939317d",
+      "decoded": {
+        "eventName": "n",
+        "data": 9007199254740991
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "float-source-valid",
+        "eventName": "n",
+        "hasData": true,
+        "data": 1.5
+      },
+      "encoded": "7b226576656e744e616d65223a226e222c2264617461223a312e357d",
+      "decoded": {
+        "eventName": "n",
+        "data": 1.5
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "numeric-key-source-valid",
+        "eventName": "n",
+        "hasData": true,
+        "data": {
+          "1": "numeric"
+        }
+      },
+      "encoded": "7b226576656e744e616d65223a226e222c2264617461223a7b2231223a226e756d65726963227d7d",
+      "decoded": {
+        "eventName": "n",
+        "data": {
+          "1": "numeric"
+        }
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "reserved",
+        "eventName": "connect",
+        "hasData": false
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "control-name",
+        "eventName": "a\u0000b",
+        "hasData": false
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "bidi-name",
+        "eventName": "a‮b",
+        "hasData": false
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "too-long-name",
+        "eventName": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "hasData": false
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "unsafe-key",
+        "eventName": "n",
+        "hasData": true,
+        "data": {
+          "__proto__": 1
+        }
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "depth-63",
+        "eventName": "n",
+        "hasData": true,
+        "data": [
+          [
+            [
+              [
+                [
+                  [
+                    [
+                      [
+                        [
+                          [
+                            [
+                              [
+                                [
+                                  [
+                                    [
+                                      [
+                                        [
+                                          [
+                                            [
+                                              [
+                                                [
+                                                  [
+                                                    [
+                                                      [
+                                                        [
+                                                          [
+                                                            [
+                                                              [
+                                                                [
+                                                                  [
+                                                                    [
+                                                                      [
+                                                                        [
+                                                                          [
+                                                                            [
+                                                                              [
+                                                                                [
+                                                                                  [
+                                                                                    [
+                                                                                      [
+                                                                                        [
+                                                                                          [
+                                                                                            [
+                                                                                              [
+                                                                                                [
+                                                                                                  [
+                                                                                                    [
+                                                                                                      [
+                                                                                                        [
+                                                                                                          [
+                                                                                                            [
+                                                                                                              [
+                                                                                                                [
+                                                                                                                  [
+                                                                                                                    [
+                                                                                                                      [
+                                                                                                                        [
+                                                                                                                          [
+                                                                                                                            [
+                                                                                                                              [
+                                                                                                                                [
+                                                                                                                                  [
+                                                                                                                                    [
+                                                                                                                                      "x"
+                                                                                                                                    ]
+                                                                                                                                  ]
+                                                                                                                                ]
+                                                                                                                              ]
+                                                                                                                            ]
+                                                                                                                          ]
+                                                                                                                        ]
+                                                                                                                      ]
+                                                                                                                    ]
+                                                                                                                  ]
+                                                                                                                ]
+                                                                                                              ]
+                                                                                                            ]
+                                                                                                          ]
+                                                                                                        ]
+                                                                                                      ]
+                                                                                                    ]
+                                                                                                  ]
+                                                                                                ]
+                                                                                              ]
+                                                                                            ]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ]
+                                                                                    ]
+                                                                                  ]
+                                                                                ]
+                                                                              ]
+                                                                            ]
+                                                                          ]
+                                                                        ]
+                                                                      ]
+                                                                    ]
+                                                                  ]
+                                                                ]
+                                                              ]
+                                                            ]
+                                                          ]
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      },
+      "encoded": "7b226576656e744e616d65223a226e222c2264617461223a5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b2278225d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d7d",
+      "decoded": {
+        "eventName": "n",
+        "data": [
+          [
+            [
+              [
+                [
+                  [
+                    [
+                      [
+                        [
+                          [
+                            [
+                              [
+                                [
+                                  [
+                                    [
+                                      [
+                                        [
+                                          [
+                                            [
+                                              [
+                                                [
+                                                  [
+                                                    [
+                                                      [
+                                                        [
+                                                          [
+                                                            [
+                                                              [
+                                                                [
+                                                                  [
+                                                                    [
+                                                                      [
+                                                                        [
+                                                                          [
+                                                                            [
+                                                                              [
+                                                                                [
+                                                                                  [
+                                                                                    [
+                                                                                      [
+                                                                                        [
+                                                                                          [
+                                                                                            [
+                                                                                              [
+                                                                                                [
+                                                                                                  [
+                                                                                                    [
+                                                                                                      [
+                                                                                                        [
+                                                                                                          [
+                                                                                                            [
+                                                                                                              [
+                                                                                                                [
+                                                                                                                  [
+                                                                                                                    [
+                                                                                                                      [
+                                                                                                                        [
+                                                                                                                          [
+                                                                                                                            [
+                                                                                                                              [
+                                                                                                                                [
+                                                                                                                                  [
+                                                                                                                                    [
+                                                                                                                                      "x"
+                                                                                                                                    ]
+                                                                                                                                  ]
+                                                                                                                                ]
+                                                                                                                              ]
+                                                                                                                            ]
+                                                                                                                          ]
+                                                                                                                        ]
+                                                                                                                      ]
+                                                                                                                    ]
+                                                                                                                  ]
+                                                                                                                ]
+                                                                                                              ]
+                                                                                                            ]
+                                                                                                          ]
+                                                                                                        ]
+                                                                                                      ]
+                                                                                                    ]
+                                                                                                  ]
+                                                                                                ]
+                                                                                              ]
+                                                                                            ]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ]
+                                                                                    ]
+                                                                                  ]
+                                                                                ]
+                                                                              ]
+                                                                            ]
+                                                                          ]
+                                                                        ]
+                                                                      ]
+                                                                    ]
+                                                                  ]
+                                                                ]
+                                                              ]
+                                                            ]
+                                                          ]
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "depth-64",
+        "eventName": "n",
+        "hasData": true,
+        "data": [
+          [
+            [
+              [
+                [
+                  [
+                    [
+                      [
+                        [
+                          [
+                            [
+                              [
+                                [
+                                  [
+                                    [
+                                      [
+                                        [
+                                          [
+                                            [
+                                              [
+                                                [
+                                                  [
+                                                    [
+                                                      [
+                                                        [
+                                                          [
+                                                            [
+                                                              [
+                                                                [
+                                                                  [
+                                                                    [
+                                                                      [
+                                                                        [
+                                                                          [
+                                                                            [
+                                                                              [
+                                                                                [
+                                                                                  [
+                                                                                    [
+                                                                                      [
+                                                                                        [
+                                                                                          [
+                                                                                            [
+                                                                                              [
+                                                                                                [
+                                                                                                  [
+                                                                                                    [
+                                                                                                      [
+                                                                                                        [
+                                                                                                          [
+                                                                                                            [
+                                                                                                              [
+                                                                                                                [
+                                                                                                                  [
+                                                                                                                    [
+                                                                                                                      [
+                                                                                                                        [
+                                                                                                                          [
+                                                                                                                            [
+                                                                                                                              [
+                                                                                                                                [
+                                                                                                                                  [
+                                                                                                                                    [
+                                                                                                                                      [
+                                                                                                                                        "x"
+                                                                                                                                      ]
+                                                                                                                                    ]
+                                                                                                                                  ]
+                                                                                                                                ]
+                                                                                                                              ]
+                                                                                                                            ]
+                                                                                                                          ]
+                                                                                                                        ]
+                                                                                                                      ]
+                                                                                                                    ]
+                                                                                                                  ]
+                                                                                                                ]
+                                                                                                              ]
+                                                                                                            ]
+                                                                                                          ]
+                                                                                                        ]
+                                                                                                      ]
+                                                                                                    ]
+                                                                                                  ]
+                                                                                                ]
+                                                                                              ]
+                                                                                            ]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ]
+                                                                                    ]
+                                                                                  ]
+                                                                                ]
+                                                                              ]
+                                                                            ]
+                                                                          ]
+                                                                        ]
+                                                                      ]
+                                                                    ]
+                                                                  ]
+                                                                ]
+                                                              ]
+                                                            ]
+                                                          ]
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "too-deep",
+        "eventName": "n",
+        "hasData": true,
+        "data": [
+          [
+            [
+              [
+                [
+                  [
+                    [
+                      [
+                        [
+                          [
+                            [
+                              [
+                                [
+                                  [
+                                    [
+                                      [
+                                        [
+                                          [
+                                            [
+                                              [
+                                                [
+                                                  [
+                                                    [
+                                                      [
+                                                        [
+                                                          [
+                                                            [
+                                                              [
+                                                                [
+                                                                  [
+                                                                    [
+                                                                      [
+                                                                        [
+                                                                          [
+                                                                            [
+                                                                              [
+                                                                                [
+                                                                                  [
+                                                                                    [
+                                                                                      [
+                                                                                        [
+                                                                                          [
+                                                                                            [
+                                                                                              [
+                                                                                                [
+                                                                                                  [
+                                                                                                    [
+                                                                                                      [
+                                                                                                        [
+                                                                                                          [
+                                                                                                            [
+                                                                                                              [
+                                                                                                                [
+                                                                                                                  [
+                                                                                                                    [
+                                                                                                                      [
+                                                                                                                        [
+                                                                                                                          [
+                                                                                                                            [
+                                                                                                                              [
+                                                                                                                                [
+                                                                                                                                  [
+                                                                                                                                    [
+                                                                                                                                      [
+                                                                                                                                        [
+                                                                                                                                          "x"
+                                                                                                                                        ]
+                                                                                                                                      ]
+                                                                                                                                    ]
+                                                                                                                                  ]
+                                                                                                                                ]
+                                                                                                                              ]
+                                                                                                                            ]
+                                                                                                                          ]
+                                                                                                                        ]
+                                                                                                                      ]
+                                                                                                                    ]
+                                                                                                                  ]
+                                                                                                                ]
+                                                                                                              ]
+                                                                                                            ]
+                                                                                                          ]
+                                                                                                        ]
+                                                                                                      ]
+                                                                                                    ]
+                                                                                                  ]
+                                                                                                ]
+                                                                                              ]
+                                                                                            ]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ]
+                                                                                    ]
+                                                                                  ]
+                                                                                ]
+                                                                              ]
+                                                                            ]
+                                                                          ]
+                                                                        ]
+                                                                      ]
+                                                                    ]
+                                                                  ]
+                                                                ]
+                                                              ]
+                                                            ]
+                                                          ]
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "estimated-limit",
+        "eventName": "n",
+        "hasData": false,
+        "max": 14
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "wire-limit",
+        "eventName": "n",
+        "hasData": false,
+        "max": 16
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "byte-limit",
+        "eventName": "abc",
+        "hasData": true,
+        "data": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "max": 32
+      },
+      "encoded": null,
+      "decoded": null,
+      "error": true
+    }
+  ],
+  "rawCases": [
+    {
+      "input": {
+        "label": "space-order",
+        "hex": "207b202264617461223a6e756c6c2c20226576656e744e616d65223a226a6f696e526f6f6d22207d20"
+      },
+      "decoded": {
+        "eventName": "joinRoom",
+        "data": null
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "bom",
+        "hex": "efbbbf7b226576656e744e616d65223a226a6f696e526f6f6d227d"
+      },
+      "decoded": {
+        "eventName": "joinRoom"
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "duplicate",
+        "hex": "7b226576656e744e616d65223a22626164222c226576656e744e616d65223a226a6f696e526f6f6d222c2264617461223a6e756c6c7d"
+      },
+      "decoded": {
+        "eventName": "joinRoom",
+        "data": null
+      },
+      "error": false
+    },
+    {
+      "input": {
+        "label": "invalid-utf8",
+        "hex": "ff"
+      },
+      "decoded": null,
+      "error": true
+    },
+    {
+      "input": {
+        "label": "extra-key",
+        "hex": "7b226576656e744e616d65223a226a6f696e526f6f6d222c226f74686572223a317d"
+      },
+      "decoded": null,
+      "error": true
+    }
+  ],
+  "countCases": [
+    {
+      "count": 99997,
+      "error": false
+    },
+    {
+      "count": 99998,
+      "error": true
+    }
+  ]
+}

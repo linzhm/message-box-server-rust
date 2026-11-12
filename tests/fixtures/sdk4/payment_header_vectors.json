@@ -1,0 +1,89 @@
+{
+  "sourceBlob": "c66270dafcc619b7d4f3de16d06e94ccbc143940",
+  "vectors": [
+    {
+      "raw": "{\"derivationPrefix\":\"AA==\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\"}",
+      "expected": {
+        "derivationPrefix": "AA==",
+        "derivationSuffix": "AQ==",
+        "transaction": "Ag=="
+      }
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AA==\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\",\"extra\":{\"ignored\":true}}",
+      "expected": {
+        "derivationPrefix": "AA==",
+        "derivationSuffix": "AQ==",
+        "transaction": "Ag=="
+      }
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB\",\"derivationSuffix\":\"AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC\",\"transaction\":\"AAEC/f7/\"}",
+      "expected": {
+        "derivationPrefix": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB",
+        "derivationSuffix": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC",
+        "transaction": "AAEC/f7/"
+      }
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"bad\",\"derivationPrefix\":\"AA==\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\"}",
+      "expected": {
+        "derivationPrefix": "AA==",
+        "derivationSuffix": "AQ==",
+        "transaction": "Ag=="
+      }
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\"}",
+      "expected": null
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AB==\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\"}",
+      "expected": null
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AA=\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\"}",
+      "expected": null
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AA\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\"}",
+      "expected": null
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AA==\\n\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\"}",
+      "expected": null
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"_w==\",\"derivationSuffix\":\"AQ==\",\"transaction\":\"Ag==\"}",
+      "expected": null
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AA==\",\"derivationSuffix\":null,\"transaction\":\"Ag==\"}",
+      "expected": null
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AA==\",\"derivationSuffix\":\"AQ==\",\"transaction\":12}",
+      "expected": null
+    },
+    {
+      "raw": "{\"derivationPrefix\":\"AA==\",\"derivationSuffix\":\"AQ==\"}",
+      "expected": null
+    },
+    {
+      "raw": "[]",
+      "expected": null
+    },
+    {
+      "raw": "null",
+      "expected": null
+    },
+    {
+      "raw": "42",
+      "expected": null
+    },
+    {
+      "raw": "{",
+      "expected": null
+    }
+  ]
+}

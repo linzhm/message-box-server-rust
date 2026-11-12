@@ -1,0 +1,516 @@
+{
+  "sourceBlob": "277933451708a86fa23b975e26c33490c5ae1306",
+  "boundedBlob": "9ba827d0b1405e6cc06ffc26f04ac16ecde9c708",
+  "cases": [
+    {
+      "input": {
+        "name": "no-devices",
+        "devices": [],
+        "enabled": true,
+        "max": 100,
+        "outcomes": {}
+      },
+      "result": {
+        "success": false,
+        "error": "No registered devices found for recipient"
+      },
+      "attempts": [],
+      "devices": []
+    },
+    {
+      "input": {
+        "name": "disabled",
+        "devices": [
+          {
+            "token": "one",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          },
+          {
+            "token": "two",
+            "owner": "alice",
+            "active": true,
+            "updated": 2
+          }
+        ],
+        "enabled": false,
+        "max": 100,
+        "outcomes": {}
+      },
+      "result": {
+        "success": false,
+        "error": "Failed to send to all 2 registered devices"
+      },
+      "attempts": [],
+      "devices": [
+        {
+          "token": "one",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        },
+        {
+          "token": "two",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "mixed",
+        "devices": [
+          {
+            "token": "one",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          },
+          {
+            "token": "bad",
+            "owner": "alice",
+            "active": true,
+            "updated": 2
+          },
+          {
+            "token": "transient",
+            "owner": "alice",
+            "active": true,
+            "updated": 3
+          },
+          {
+            "token": "foreign",
+            "owner": "bob",
+            "active": true,
+            "updated": 4
+          },
+          {
+            "token": "inactive",
+            "owner": "alice",
+            "active": false,
+            "updated": 5
+          }
+        ],
+        "enabled": true,
+        "max": 100,
+        "outcomes": {
+          "one": "ok",
+          "bad": "invalid-registration-token",
+          "transient": "temporary"
+        }
+      },
+      "result": {
+        "success": true
+      },
+      "attempts": [
+        "bad",
+        "one",
+        "transient"
+      ],
+      "devices": [
+        {
+          "token": "one",
+          "active": true,
+          "lastUsedChanged": true,
+          "updatedChanged": true
+        },
+        {
+          "token": "bad",
+          "active": false,
+          "lastUsedChanged": false,
+          "updatedChanged": true
+        },
+        {
+          "token": "transient",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        },
+        {
+          "token": "foreign",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        },
+        {
+          "token": "inactive",
+          "active": false,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "all-fail",
+        "devices": [
+          {
+            "token": "bad",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          },
+          {
+            "token": "transient",
+            "owner": "alice",
+            "active": true,
+            "updated": 2
+          }
+        ],
+        "enabled": true,
+        "max": 100,
+        "outcomes": {
+          "bad": "registration-token-not-registered",
+          "transient": "temporary"
+        }
+      },
+      "result": {
+        "success": false,
+        "error": "Failed to send to all 2 registered devices"
+      },
+      "attempts": [
+        "bad",
+        "transient"
+      ],
+      "devices": [
+        {
+          "token": "bad",
+          "active": false,
+          "lastUsedChanged": false,
+          "updatedChanged": true
+        },
+        {
+          "token": "transient",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "most-recent-two",
+        "devices": [
+          {
+            "token": "old",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          },
+          {
+            "token": "middle",
+            "owner": "alice",
+            "active": true,
+            "updated": 2
+          },
+          {
+            "token": "new",
+            "owner": "alice",
+            "active": true,
+            "updated": 3
+          }
+        ],
+        "enabled": true,
+        "max": 2,
+        "outcomes": {
+          "old": "ok",
+          "middle": "ok",
+          "new": "ok"
+        }
+      },
+      "result": {
+        "success": true
+      },
+      "attempts": [
+        "middle",
+        "new"
+      ],
+      "devices": [
+        {
+          "token": "old",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        },
+        {
+          "token": "middle",
+          "active": true,
+          "lastUsedChanged": true,
+          "updatedChanged": true
+        },
+        {
+          "token": "new",
+          "active": true,
+          "lastUsedChanged": true,
+          "updatedChanged": true
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "success-write-failure",
+        "devices": [
+          {
+            "token": "badupdate",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          },
+          {
+            "token": "good",
+            "owner": "alice",
+            "active": true,
+            "updated": 2
+          }
+        ],
+        "enabled": true,
+        "max": 100,
+        "outcomes": {
+          "badupdate": "ok",
+          "good": "ok"
+        },
+        "updateFailureToken": "badupdate",
+        "updateFailureKind": "last_used"
+      },
+      "result": {
+        "success": true
+      },
+      "attempts": [
+        "badupdate",
+        "good"
+      ],
+      "devices": [
+        {
+          "token": "badupdate",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        },
+        {
+          "token": "good",
+          "active": true,
+          "lastUsedChanged": true,
+          "updatedChanged": true
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "invalid-write-failure",
+        "devices": [
+          {
+            "token": "bad",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          }
+        ],
+        "enabled": true,
+        "max": 100,
+        "outcomes": {
+          "bad": "invalid-registration-token"
+        },
+        "updateFailureToken": "bad",
+        "updateFailureKind": "active"
+      },
+      "result": {
+        "success": false,
+        "error": "FCM notification failed"
+      },
+      "attempts": [
+        "bad"
+      ],
+      "devices": [
+        {
+          "token": "bad",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "stop-worker-after-inactive-update-failure",
+        "devices": [
+          {
+            "token": "late",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          },
+          {
+            "token": "bad",
+            "owner": "alice",
+            "active": true,
+            "updated": 2
+          }
+        ],
+        "enabled": true,
+        "max": 100,
+        "concurrency": 1,
+        "outcomes": {
+          "bad": "invalid-registration-token",
+          "late": "ok"
+        },
+        "updateFailureToken": "bad",
+        "updateFailureKind": "active"
+      },
+      "result": {
+        "success": false,
+        "error": "FCM notification failed"
+      },
+      "attempts": [
+        "bad"
+      ],
+      "devices": [
+        {
+          "token": "late",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        },
+        {
+          "token": "bad",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "other-worker-continues",
+        "devices": [
+          {
+            "token": "late",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          },
+          {
+            "token": "held",
+            "owner": "alice",
+            "active": true,
+            "updated": 2
+          },
+          {
+            "token": "bad",
+            "owner": "alice",
+            "active": true,
+            "updated": 3
+          }
+        ],
+        "enabled": true,
+        "max": 100,
+        "concurrency": 2,
+        "outcomes": {
+          "bad": "invalid-registration-token",
+          "held": "ok",
+          "late": "ok"
+        },
+        "updateFailureToken": "bad",
+        "updateFailureKind": "active",
+        "delayToken": "held",
+        "delayMillis": 20,
+        "settleMs": 100,
+        "waitToken": "bad",
+        "signalToken": "held"
+      },
+      "result": {
+        "success": false,
+        "error": "FCM notification failed"
+      },
+      "attempts": [
+        "bad",
+        "held",
+        "late"
+      ],
+      "devices": [
+        {
+          "token": "late",
+          "active": true,
+          "lastUsedChanged": true,
+          "updatedChanged": true
+        },
+        {
+          "token": "held",
+          "active": true,
+          "lastUsedChanged": true,
+          "updatedChanged": true
+        },
+        {
+          "token": "bad",
+          "active": true,
+          "lastUsedChanged": false,
+          "updatedChanged": false
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "unlimited-concurrency",
+        "devices": [
+          {
+            "token": "one",
+            "owner": "alice",
+            "active": true,
+            "updated": 1
+          },
+          {
+            "token": "two",
+            "owner": "alice",
+            "active": true,
+            "updated": 2
+          }
+        ],
+        "enabled": true,
+        "max": -1,
+        "concurrency": -1,
+        "outcomes": {
+          "one": "ok",
+          "two": "ok"
+        }
+      },
+      "result": {
+        "success": true
+      },
+      "attempts": [
+        "one",
+        "two"
+      ],
+      "devices": [
+        {
+          "token": "one",
+          "active": true,
+          "lastUsedChanged": true,
+          "updatedChanged": true
+        },
+        {
+          "token": "two",
+          "active": true,
+          "lastUsedChanged": true,
+          "updatedChanged": true
+        }
+      ]
+    },
+    {
+      "input": {
+        "name": "storage-failure",
+        "devices": [],
+        "enabled": true,
+        "max": 100,
+        "outcomes": {},
+        "dbFailure": true
+      },
+      "result": {
+        "success": false,
+        "error": "FCM notification failed"
+      },
+      "attempts": [],
+      "devices": []
+    }
+  ]
+}

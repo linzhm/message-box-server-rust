@@ -1,0 +1,160 @@
+{
+  "sourceBlob": "277933451708a86fa23b975e26c33490c5ae1306",
+  "cases": [
+    {
+      "input": {
+        "token": "fake-token",
+        "title": "New Message",
+        "messageId": "id-1"
+      },
+      "output": {
+        "token": "fake-token",
+        "notification": {
+          "title": "New Message",
+          "body": "Open the app to view this message."
+        },
+        "android": {
+          "priority": "high",
+          "data": {
+            "messageId": "id-1",
+            "originator": "unknown"
+          }
+        },
+        "apns": {
+          "headers": {
+            "apns-push-type": "alert",
+            "apns-priority": "10"
+          },
+          "payload": {
+            "aps": {
+              "mutable-content": 1,
+              "alert": {
+                "title": "New Message",
+                "body": "Open the app to view this message."
+              }
+            },
+            "messageId": "id-1",
+            "originator": "unknown"
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "token": "fake-token",
+        "title": "",
+        "messageId": "id-2",
+        "originator": ""
+      },
+      "output": {
+        "token": "fake-token",
+        "notification": {
+          "title": "",
+          "body": "Open the app to view this message."
+        },
+        "android": {
+          "priority": "high",
+          "data": {
+            "messageId": "id-2",
+            "originator": "unknown"
+          }
+        },
+        "apns": {
+          "headers": {
+            "apns-push-type": "alert",
+            "apns-priority": "10"
+          },
+          "payload": {
+            "aps": {
+              "mutable-content": 1,
+              "alert": {
+                "title": "",
+                "body": "Open the app to view this message."
+              }
+            },
+            "messageId": "id-2",
+            "originator": ""
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "token": "another-fake-token",
+        "title": "提示",
+        "messageId": "猫",
+        "originator": "origin.test"
+      },
+      "output": {
+        "token": "another-fake-token",
+        "notification": {
+          "title": "提示",
+          "body": "Open the app to view this message."
+        },
+        "android": {
+          "priority": "high",
+          "data": {
+            "messageId": "猫",
+            "originator": "origin.test"
+          }
+        },
+        "apns": {
+          "headers": {
+            "apns-push-type": "alert",
+            "apns-priority": "10"
+          },
+          "payload": {
+            "aps": {
+              "mutable-content": 1,
+              "alert": {
+                "title": "提示",
+                "body": "Open the app to view this message."
+              }
+            },
+            "messageId": "猫",
+            "originator": "origin.test"
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "token": "fake",
+        "title": "Title",
+        "messageId": "id-3",
+        "originator": null
+      },
+      "output": {
+        "token": "fake",
+        "notification": {
+          "title": "Title",
+          "body": "Open the app to view this message."
+        },
+        "android": {
+          "priority": "high",
+          "data": {
+            "messageId": "id-3",
+            "originator": "unknown"
+          }
+        },
+        "apns": {
+          "headers": {
+            "apns-push-type": "alert",
+            "apns-priority": "10"
+          },
+          "payload": {
+            "aps": {
+              "mutable-content": 1,
+              "alert": {
+                "title": "Title",
+                "body": "Open the app to view this message."
+              }
+            },
+            "messageId": "id-3",
+            "originator": "unknown"
+          }
+        }
+      }
+    }
+  ]
+}

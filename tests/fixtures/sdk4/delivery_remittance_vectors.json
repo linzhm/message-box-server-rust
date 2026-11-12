@@ -1,0 +1,287 @@
+{
+  "sourceBlob": "1279ce37c009e1cc37419824673f1ac4403b0510",
+  "cases": [
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": true
+    },
+    {
+      "output": {
+        "outputIndex": 1,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": true
+    },
+    {
+      "output": {
+        "outputIndex": -1,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 1.5,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 9007199254740991,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": true
+    },
+    {
+      "output": {
+        "outputIndex": 9007199254740992,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "basket insertion",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": null
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "A",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AA=",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AB==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AA==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": true
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "aA==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": true
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "////",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": true
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AA==\n",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": true
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "00"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179800"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    },
+    {
+      "output": {
+        "outputIndex": 0,
+        "protocol": "wallet payment",
+        "paymentRemittance": {
+          "derivationPrefix": "AQ==",
+          "derivationSuffix": "Ag==",
+          "senderIdentityKey": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+        }
+      },
+      "sender": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "expected": false
+    }
+  ]
+}

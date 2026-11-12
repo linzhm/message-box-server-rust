@@ -1,0 +1,90 @@
+{
+  "source": "SDK 4.0.1 fixed 52d36a5, ProtoWallet anyone and P2PKH; synthetic public keys only",
+  "anyone": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+  "cases": [
+    {
+      "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+      "prefix": "AQ==",
+      "suffix": "Ag==",
+      "publicKey": "02f6ea59d6ad1d4d43b703c3ffa792db1e78d96e2ad578ec85654b8cecf13044be",
+      "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+    },
+    {
+      "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+      "prefix": "AA==",
+      "suffix": "////",
+      "publicKey": "037137322c10cc54a388aa224b44e0cf774b96af0e146283a2256ee19630126a10",
+      "script": "76a914f7bf873dd1311e4682c66217b398abc95dc7a04388ac"
+    },
+    {
+      "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+      "prefix": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "suffix": "AQIDBA==",
+      "publicKey": "02d099eebd5ed3d1ec60e8b7183a2bd74b0478f20168d35ff254474dfc3f94e607",
+      "script": "76a9147f2a90fc0009a86d7b6505cc17fa635526e64c2688ac"
+    },
+    {
+      "recipient": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+      "prefix": "AQ==",
+      "suffix": "Ag==",
+      "publicKey": "03695c8599cc9e58500519b61ba2374795820b2b8252ccd79b616c36729971d131",
+      "script": "76a9141715294c35469342617a42c4b8bce11a5fa5ac1488ac"
+    },
+    {
+      "recipient": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+      "prefix": "AA==",
+      "suffix": "////",
+      "publicKey": "021759ac6906db233c628ae7b221ce6a0111e8fabcdf36e748a2be2cbb7da61a7b",
+      "script": "76a9144eb3a727f240412759439310369fac87d51dfc5e88ac"
+    },
+    {
+      "recipient": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+      "prefix": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "suffix": "AQIDBA==",
+      "publicKey": "03c0678c909ef01026d3e5eee4a1337ca8e249312a4935b087f22e6ffc95c0409a",
+      "script": "76a914cd0fe6ef1dc418ecdb67e30797cbaab30fe609b088ac"
+    },
+    {
+      "recipient": "03acd484e2f0c7f65309ad178a9f559abde09796974c57e714c35f110dfc27ccbe",
+      "prefix": "AQ==",
+      "suffix": "Ag==",
+      "publicKey": "034030953e67eb14fc942399f4ff6ee3769a3e733a2a71c894666e0e6ece5a66a1",
+      "script": "76a9141cb3212eb8f0a59842b763352431951b7bf66ddd88ac"
+    },
+    {
+      "recipient": "03acd484e2f0c7f65309ad178a9f559abde09796974c57e714c35f110dfc27ccbe",
+      "prefix": "AA==",
+      "suffix": "////",
+      "publicKey": "03cd15bf8b8c3519e9f96efee30e16969e8d5c3581861567ea29e08ea20027b46d",
+      "script": "76a9144bfe693a5eff05fd6bc3d4d14fcd249ac84a17d388ac"
+    },
+    {
+      "recipient": "03acd484e2f0c7f65309ad178a9f559abde09796974c57e714c35f110dfc27ccbe",
+      "prefix": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "suffix": "AQIDBA==",
+      "publicKey": "022a631ca48e2b3bbe36ea42b0d1592bca0ef03680b107ee330cba0bf9868397cb",
+      "script": "76a91486f5abdb929b78500025d8950519810dbda3740988ac"
+    },
+    {
+      "recipient": "02fe8d1eb1bcb3432b1db5833ff5f2226d9cb5e65cee430558c18ed3a3c86ce1af",
+      "prefix": "AQ==",
+      "suffix": "Ag==",
+      "publicKey": "0288d55e9b7ed8b5352bb6652503a86a8991a4ba1ac163ed2a45011d0f10df32a9",
+      "script": "76a914fcac6f4f5ff5e89372b0789bcc65c9e0a254a4d088ac"
+    },
+    {
+      "recipient": "02fe8d1eb1bcb3432b1db5833ff5f2226d9cb5e65cee430558c18ed3a3c86ce1af",
+      "prefix": "AA==",
+      "suffix": "////",
+      "publicKey": "0308fce99d295d885a931e71aedcbcff8dfcdc9341911e07df93ae238a89e4f8a8",
+      "script": "76a914bd184ce087d1177f22aa7a605dc43c689e9a48c388ac"
+    },
+    {
+      "recipient": "02fe8d1eb1bcb3432b1db5833ff5f2226d9cb5e65cee430558c18ed3a3c86ce1af",
+      "prefix": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "suffix": "AQIDBA==",
+      "publicKey": "03d50dcc9b7c82a5060c692226741661889c39aee99f144b2bedaed85cc6fbd3b0",
+      "script": "76a91425b3def927d6259daa16b4b81634b7e3439dcbf588ac"
+    }
+  ]
+}

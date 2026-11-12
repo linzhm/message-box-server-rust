@@ -1,0 +1,1005 @@
+{
+  "sourceBlob": "c66270dafcc619b7d4f3de16d06e94ccbc143940",
+  "vectors": [
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000015100000000",
+      "subsetSupported": true,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": {
+        "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "satoshis": 1
+      },
+      "normalizedTxids": [
+        "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814"
+      ],
+      "normalizedHex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000015100000000"
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0100beef0001010000000001010000000000000001510000000000",
+      "subsetSupported": true,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": {
+        "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "satoshis": 1
+      },
+      "normalizedTxids": [
+        "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814"
+      ],
+      "normalizedHex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0100beef0001010000000001010000000000000001510000000000"
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010214180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf",
+      "subsetSupported": true,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0000",
+      "subsetSupported": true,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00020001000000000101000000000000000151000000000214180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf",
+      "subsetSupported": true,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0002000100000000010100000000000000015100000000000100000000010100000000000000015100000000",
+      "subsetSupported": true,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": {
+        "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "satoshis": 1
+      },
+      "normalizedTxids": [
+        "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814"
+      ],
+      "normalizedHex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000015100000000"
+    },
+    {
+      "hex": "0101010100000000000000000000000000000000000000000000000000000000000000000200beef0001000100000000010100000000000000015100000000",
+      "subsetSupported": true,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0100beef000101000000000101000000000000000151000000000100",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": {
+        "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "satoshis": 1
+      },
+      "normalizedTxids": [
+        "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814"
+      ],
+      "normalizedHex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0100beef0001010000000001010000000000000001510000000000"
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000101000100000000010100000000000000015100000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": {
+        "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "satoshis": 1
+      },
+      "normalizedTxids": [
+        "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814"
+      ],
+      "normalizedHex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000015100000000"
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef01000101000214180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf00",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000000000000001510000000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0200beef0001000100000000010100000000000000015100000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001030100000000010100000000000000015100000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": {
+        "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "satoshis": 1
+      },
+      "normalizedTxids": [
+        "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814"
+      ],
+      "normalizedHex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000015100000000"
+    },
+    {
+      "hex": "",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "01",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "010101",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "01010101",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "010101011418",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "01010101141800",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "010101011418009283",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f3",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cf",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa669",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a66",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dc",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba4226",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba422662",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e1",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9d",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf02",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200be",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101000000000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000000000000001",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101000000000000000151",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000015100",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000000000000001510000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101000000000000000151000000",
+      "subsetSupported": false,
+      "price": 1,
+      "sdkVerifyValid": null,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "label": "amount-under",
+      "hex": "01010101f4d10f2bfd95ae463a8615a218f84e81ad8a372a5b9eccbd33c29a156ca4bd620200beef0001000100000000016300000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "label": "amount-exact",
+      "hex": "01010101cd588bc2ddce102c3848c4334572ae45a54be16e82237553c9964df3b6efef250200beef0001000100000000016400000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "25efefb6f34d96c9537523826ee14ba545ae724533c448382c10ceddc28b58cd",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "25efefb6f34d96c9537523826ee14ba545ae724533c448382c10ceddc28b58cd"
+      ],
+      "normalizedHex": "01010101cd588bc2ddce102c3848c4334572ae45a54be16e82237553c9964df3b6efef250200beef0001000100000000016400000000000000015100000000"
+    },
+    {
+      "label": "amount-first-under",
+      "hex": "01010101d05a5f9fdbe240484e3d62c2372e172be0de394bb95d6af25aefb129ebb567070200beef000100010000000002630000000000000001510100000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "label": "no-outputs",
+      "hex": "0101010143ec7a579f5561a42a7e9637ad4156672735a658be2752181801f723ba3316d20200beef00010001000000000000000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "label": "long-chain",
+      "hex": "01010101c5e364a05acdd4bf2abb4d1add32d83a9384d3de0b6e6fec5e4bc501c467f38e0200beef00030001000000013e54c18c6bee1c6d14694111d16a46a3b1d12bff34bd7199fdbe236f7958efbd0000000000ffffffff01640000000000000001510000000000010000000001650000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016600000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "8ef367c401c54b5eec6f6e0bded384933ad832dd1a4dbb2abfd4cd5aa064e3c5",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "bdef58796f23befd9971bd34ff2bd1b1a3466ad1114169146d1cee6b8cc1543e",
+        "8ef367c401c54b5eec6f6e0bded384933ad832dd1a4dbb2abfd4cd5aa064e3c5"
+      ],
+      "normalizedHex": "01010101c5e364a05acdd4bf2abb4d1add32d83a9384d3de0b6e6fec5e4bc501c467f38e0200beef000300010000000001650000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff0166000000000000000151000000000001000000013e54c18c6bee1c6d14694111d16a46a3b1d12bff34bd7199fdbe236f7958efbd0000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "branch-unsupported",
+      "hex": "01010101e1d8a0fbfd0b3fa30225238e034ea18f134a44338fbbcf5873fa3e7a804fe1c50200beef000300010000000001650000000000000001510000000000010000000001e80300000000000001510000000000010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff4f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff016400000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "c5e14f807a3efa7358cfbb8f33444a138fa14e038e232502a33f0bfdfba0d8e1",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "92f06005f51981ae89f855306f6498bc8b764c4d7f6cbdb4881dc56d4d77314f",
+        "c5e14f807a3efa7358cfbb8f33444a138fa14e038e232502a33f0bfdfba0d8e1"
+      ],
+      "normalizedHex": "01010101e1d8a0fbfd0b3fa30225238e034ea18f134a44338fbbcf5873fa3e7a804fe1c50200beef000300010000000001650000000000000001510000000000010000000001e80300000000000001510000000000010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff4f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "branch-reversed",
+      "hex": "01010101e1d8a0fbfd0b3fa30225238e034ea18f134a44338fbbcf5873fa3e7a804fe1c50200beef000300010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff4f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff01640000000000000001510000000000010000000001e803000000000000015100000000000100000000016500000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "c5e14f807a3efa7358cfbb8f33444a138fa14e038e232502a33f0bfdfba0d8e1",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "92f06005f51981ae89f855306f6498bc8b764c4d7f6cbdb4881dc56d4d77314f",
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "c5e14f807a3efa7358cfbb8f33444a138fa14e038e232502a33f0bfdfba0d8e1"
+      ],
+      "normalizedHex": "01010101e1d8a0fbfd0b3fa30225238e034ea18f134a44338fbbcf5873fa3e7a804fe1c50200beef000300010000000001e80300000000000001510000000000010000000001650000000000000001510000000000010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff4f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "branch-v1-reversed",
+      "hex": "01010101e1d8a0fbfd0b3fa30225238e034ea18f134a44338fbbcf5873fa3e7a804fe1c50100beef0003010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff4f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff01640000000000000001510000000000010000000001e80300000000000001510000000000010000000001650000000000000001510000000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "c5e14f807a3efa7358cfbb8f33444a138fa14e038e232502a33f0bfdfba0d8e1",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "92f06005f51981ae89f855306f6498bc8b764c4d7f6cbdb4881dc56d4d77314f",
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "c5e14f807a3efa7358cfbb8f33444a138fa14e038e232502a33f0bfdfba0d8e1"
+      ],
+      "normalizedHex": "01010101e1d8a0fbfd0b3fa30225238e034ea18f134a44338fbbcf5873fa3e7a804fe1c50100beef0003010000000001e80300000000000001510000000000010000000001650000000000000001510000000000010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff4f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff01640000000000000001510000000000"
+    },
+    {
+      "label": "orphan-unrelated",
+      "hex": "0101010116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0200beef000200010000000122222222222222222222222222222222222222222222222222222222222222220000000000ffffffff01f401000000000000015100000000000100000000016500000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": false,
+      "expected": {
+        "txid": "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "satoshis": 101
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16"
+      ],
+      "normalizedHex": "0101010116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0200beef0001000100000000016500000000000000015100000000"
+    },
+    {
+      "label": "branch-known-parent",
+      "hex": "01010101e1d8a0fbfd0b3fa30225238e034ea18f134a44338fbbcf5873fa3e7a804fe1c50200beef000300010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff4f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff0164000000000000000151000000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c00010000000001e803000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": false,
+      "expected": {
+        "txid": "c5e14f807a3efa7358cfbb8f33444a138fa14e038e232502a33f0bfdfba0d8e1",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "92f06005f51981ae89f855306f6498bc8b764c4d7f6cbdb4881dc56d4d77314f",
+        "c5e14f807a3efa7358cfbb8f33444a138fa14e038e232502a33f0bfdfba0d8e1"
+      ],
+      "normalizedHex": "01010101e1d8a0fbfd0b3fa30225238e034ea18f134a44338fbbcf5873fa3e7a804fe1c50200beef00030216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c00010000000001e80300000000000001510000000000010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff4f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "fork-join-shuffled",
+      "hex": "010101018afbafbaa24cf4e4d154028797915cb04139533379a635453f959227fdb387d90200beef00050001000000014f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff013c00000000000000015100000000000100000000016500000000000000015100000000000100000002ff95b6235d47a08e97372be5b9c29a0dd79dfce9ba6bd53cd5b0b6d0a17dbd100000000000ffffffff4af080f456fbf688917277dfb65cfd33f70d6b2360e1b959d2c3108f85113ef60000000000ffffffff01640000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff01280000000000000001510000000000010000000001e803000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "d987b3fd2792953f4535a67933533941b05c9197870254d1e4f44ca2baaffb8a",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "10bd7da1d0b6b0d53cd56bbae9fc9dd70d9ac2b9e52b37978ea0475d23b695ff",
+        "92f06005f51981ae89f855306f6498bc8b764c4d7f6cbdb4881dc56d4d77314f",
+        "f63e11858f10c3d259b9e160236b0df733fd5cb6df77729188f6fb56f480f04a",
+        "d987b3fd2792953f4535a67933533941b05c9197870254d1e4f44ca2baaffb8a"
+      ],
+      "normalizedHex": "010101018afbafbaa24cf4e4d154028797915cb04139533379a635453f959227fdb387d90200beef000500010000000001650000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff01280000000000000001510000000000010000000001e8030000000000000151000000000001000000014f31774d6dc51d88b4bd6c7f4d4c768bbc98646f3055f889ae8119f50560f0920000000000ffffffff013c00000000000000015100000000000100000002ff95b6235d47a08e97372be5b9c29a0dd79dfce9ba6bd53cd5b0b6d0a17dbd100000000000ffffffff4af080f456fbf688917277dfb65cfd33f70d6b2360e1b959d2c3108f85113ef60000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "diamond-shared",
+      "hex": "010101018e750707511e313e5f412c5ffaa2c69b3cf2ef9095046bc7ef0da4811bdc5f520200beef000400010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff013c00000000000000015100000000000100000000016500000000000000015100000000000100000002ff95b6235d47a08e97372be5b9c29a0dd79dfce9ba6bd53cd5b0b6d0a17dbd100000000000ffffffffb17e6a0292b8255d2cf9c26a2fad903ec5a4ed370f13c4b66affef74303c6edc0000000000ffffffff01640000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff012800000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "525fdc1b81a40defc76b049590eff23c9bc6a2fa5f2c415f3e311e510707758e",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "10bd7da1d0b6b0d53cd56bbae9fc9dd70d9ac2b9e52b37978ea0475d23b695ff",
+        "dc6e3c3074efff6ab6c4130f37eda4c53e90ad2f6ac2f92c5d25b892026a7eb1",
+        "525fdc1b81a40defc76b049590eff23c9bc6a2fa5f2c415f3e311e510707758e"
+      ],
+      "normalizedHex": "010101018e750707511e313e5f412c5ffaa2c69b3cf2ef9095046bc7ef0da4811bdc5f520200beef000400010000000001650000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff01280000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff013c00000000000000015100000000000100000002ff95b6235d47a08e97372be5b9c29a0dd79dfce9ba6bd53cd5b0b6d0a17dbd100000000000ffffffffb17e6a0292b8255d2cf9c26a2fad903ec5a4ed370f13c4b66affef74303c6edc0000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "duplicate-parent-inputs",
+      "hex": "01010101640c8b5991fffde33f2081f6357cd4e36a4086d9a7ecc67ce087f79c3567a1b70200beef000200010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff16ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0100000000ffffffff016400000000000000015100000000000100000000016500000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "b7a167359cf787e07cc6eca7d986406ae3d47c35f681203fe3fdff91598b0c64",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "b7a167359cf787e07cc6eca7d986406ae3d47c35f681203fe3fdff91598b0c64"
+      ],
+      "normalizedHex": "01010101640c8b5991fffde33f2081f6357cd4e36a4086d9a7ecc67ce087f79c3567a1b70200beef000200010000000001650000000000000001510000000000010000000216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff16ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0100000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "unrelated",
+      "hex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef000300010000000001e80300000000000001510000000000010000000001650000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": false,
+      "expected": {
+        "txid": "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825"
+      ],
+      "normalizedHex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef000200010000000001650000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "missing-parent",
+      "hex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef000100010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": false,
+      "expected": {
+        "txid": "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825"
+      ],
+      "normalizedHex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef000100010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "reordered-parent-child",
+      "hex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef000200010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000000100000000016500000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": true,
+      "expected": {
+        "txid": "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825"
+      ],
+      "normalizedHex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef000200010000000001650000000000000001510000000000010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "txid-only-parent",
+      "hex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef00020216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c00010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": false,
+      "expected": {
+        "txid": "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "0c1ac3ff4105d9086443e01dad430f4435811485f255a64ae3399704bd25ac16",
+        "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825"
+      ],
+      "normalizedHex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef00020216ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c00010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000"
+    },
+    {
+      "label": "duplicate-last-id",
+      "hex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef000200010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000022518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": false,
+      "expected": null,
+      "normalizedTxids": null,
+      "normalizedHex": null
+    },
+    {
+      "label": "duplicate-last-raw",
+      "hex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef0002022518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b00010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000",
+      "subsetSupported": true,
+      "price": 100,
+      "sdkVerifyValid": false,
+      "expected": {
+        "txid": "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825",
+        "satoshis": 100
+      },
+      "normalizedTxids": [
+        "6bc0ea158260e472fda3b1f2aa6cc58544c88117c1598049d7cced9209171825"
+      ],
+      "normalizedHex": "010101012518170992edccd7498059c11781c84485c56caaf2b1a3fd72e4608215eac06b0200beef000100010000000116ac25bd049739e34aa655f285148135440f43ad1de0436408d90541ffc31a0c0000000000ffffffff016400000000000000015100000000"
+    }
+  ]
+}

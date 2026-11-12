@@ -1,0 +1,68 @@
+{
+  "source": "ts-stack 52d36a5 SDK Writer and auth middleware helpers; no server or cryptography",
+  "vectors": [
+    {
+      "method": "POST",
+      "path": "/listMessages",
+      "body": "{\"messageBox\":\"inbox\"}",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030304504f53540d2f6c6973744d65737361676573ffffffffffffffffff010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4e167b226d657373616765426f78223a22696e626f78227d"
+    },
+    {
+      "method": "POST",
+      "path": "/sendMessage",
+      "body": "{\"message\":null}",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030304504f53540c2f73656e644d657373616765ffffffffffffffffff010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4e107b226d657373616765223a6e756c6c7d"
+    },
+    {
+      "method": "POST",
+      "path": "/acknowledgeMessage",
+      "body": "{\"messageIds\":[1]}",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030304504f5354132f61636b6e6f776c656467654d657373616765ffffffffffffffffff010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4e127b226d657373616765496473223a5b315d7d"
+    },
+    {
+      "method": "POST",
+      "path": "/registerDevice",
+      "body": "{\"fcmToken\":false}",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030304504f53540f2f7265676973746572446576696365ffffffffffffffffff010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4e127b2266636d546f6b656e223a66616c73657d"
+    },
+    {
+      "method": "POST",
+      "path": "/permissions/set",
+      "body": "{\"messageBox\":\"inbox\",\"recipientFee\":\"free\"}",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030304504f5354102f7065726d697373696f6e732f736574ffffffffffffffffff010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4e2c7b226d657373616765426f78223a22696e626f78222c22726563697069656e74466565223a2266726565227d"
+    },
+    {
+      "method": "GET",
+      "path": "/devices",
+      "body": "",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030303474554082f64657669636573ffffffffffffffffff010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4effffffffffffffffff"
+    },
+    {
+      "method": "GET",
+      "path": "/permissions/get?messageBox=inbox",
+      "body": "",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030303474554102f7065726d697373696f6e732f676574113f6d657373616765426f783d696e626f78010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4effffffffffffffffff"
+    },
+    {
+      "method": "GET",
+      "path": "/permissions/list",
+      "body": "",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030303474554112f7065726d697373696f6e732f6c697374ffffffffffffffffff010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4effffffffffffffffff"
+    },
+    {
+      "method": "GET",
+      "path": "/permissions/quote?recipient=0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798&messageBox=inbox",
+      "body": "",
+      "contentType": "application/JSON; charset=utf-8",
+      "frameHex": "030303030303030303030303030303030303030303030303030303030303030303474554122f7065726d697373696f6e732f71756f74655e3f726563697069656e743d303237396265363637656639646362626163353561303632393563653837306230373032396266636462326463653238643935396632383135623136663831373938266d657373616765426f783d696e626f78010c636f6e74656e742d74797065106170706c69636174696f6e2f4a534f4effffffffffffffffff"
+    }
+  ]
+}

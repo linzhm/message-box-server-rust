@@ -1,0 +1,464 @@
+{
+  "sourceBlob": "e5871dab0061bd7970925249fd6839bf5de409fb",
+  "cases": [
+    {
+      "input": {
+        "name": "disabled-unset",
+        "steps": [
+          {}
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": null
+        }
+      ],
+      "calls": [],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "disabled-variants",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "false"
+          },
+          {
+            "ENABLE_FIREBASE": "TRUE"
+          },
+          {
+            "ENABLE_FIREBASE": " true "
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": null
+        },
+        {
+          "app": null,
+          "error": null
+        },
+        {
+          "app": null,
+          "error": null
+        }
+      ],
+      "calls": [],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "missing-project",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "missing-project"
+        }
+      ],
+      "calls": [],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "empty-project",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": ""
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "missing-project"
+        }
+      ],
+      "calls": [],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "whitespace-project",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": " "
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": "new",
+          "error": null
+        }
+      ],
+      "calls": [
+        "default",
+        "getApps",
+        "initialize: "
+      ],
+      "messaging": "new"
+    },
+    {
+      "input": {
+        "name": "default-credentials",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_JSON": "",
+            "FIREBASE_SERVICE_ACCOUNT_PATH": ""
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": "new",
+          "error": null
+        }
+      ],
+      "calls": [
+        "default",
+        "getApps",
+        "initialize:project"
+      ],
+      "messaging": "new"
+    },
+    {
+      "input": {
+        "name": "json-precedence",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_JSON": "{\"private_key\":\"fake-key\",\"client_email\":\"fake@example.test\",\"project_id\":\"credential-project\"}",
+            "FIREBASE_SERVICE_ACCOUNT_PATH": "ignored.json"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": "new",
+          "error": null
+        }
+      ],
+      "calls": [
+        "cert:credential-project",
+        "getApps",
+        "initialize:project"
+      ],
+      "messaging": "new"
+    },
+    {
+      "input": {
+        "name": "invalid-json-no-fallback",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_JSON": "{",
+            "FIREBASE_SERVICE_ACCOUNT_PATH": "ignored.json"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "invalid-credential"
+        }
+      ],
+      "calls": [],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "missing-fields",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_JSON": "{}"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "invalid-credential"
+        }
+      ],
+      "calls": [],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "file-credential",
+        "files": {
+          "/work/keys/service.json": "{\"private_key\":\"fake-key\",\"client_email\":\"fake@example.test\",\"project_id\":\"credential-project\"}"
+        },
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_PATH": "keys/../keys/service.json"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": "new",
+          "error": null
+        }
+      ],
+      "calls": [
+        "read:/work/keys/service.json",
+        "cert:credential-project",
+        "getApps",
+        "initialize:project"
+      ],
+      "messaging": "new"
+    },
+    {
+      "input": {
+        "name": "file-absolute",
+        "files": {
+          "/secrets/service.json": "{\"private_key\":\"fake-key\",\"client_email\":\"fake@example.test\",\"project_id\":\"credential-project\"}"
+        },
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_PATH": "/secrets/other/../service.json"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": "new",
+          "error": null
+        }
+      ],
+      "calls": [
+        "read:/secrets/service.json",
+        "cert:credential-project",
+        "getApps",
+        "initialize:project"
+      ],
+      "messaging": "new"
+    },
+    {
+      "input": {
+        "name": "file-missing",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_PATH": "missing.json"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "read-failure"
+        }
+      ],
+      "calls": [
+        "read:/work/missing.json"
+      ],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "existing-app",
+        "existing": true,
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_JSON": "{\"private_key\":\"fake-key\",\"client_email\":\"fake@example.test\",\"project_id\":\"credential-project\"}"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": "existing",
+          "error": null
+        }
+      ],
+      "calls": [
+        "cert:credential-project",
+        "getApps",
+        "getApp"
+      ],
+      "messaging": "existing"
+    },
+    {
+      "input": {
+        "name": "cached-and-disabled",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "first"
+          },
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "",
+            "FIREBASE_SERVICE_ACCOUNT_JSON": "{"
+          },
+          {
+            "ENABLE_FIREBASE": "false"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": "new",
+          "error": null
+        },
+        {
+          "app": "new",
+          "error": null
+        },
+        {
+          "app": null,
+          "error": null
+        }
+      ],
+      "calls": [
+        "default",
+        "getApps",
+        "initialize:first"
+      ],
+      "messaging": "new"
+    },
+    {
+      "input": {
+        "name": "cert-failure-no-fallback",
+        "fail": "cert",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project",
+            "FIREBASE_SERVICE_ACCOUNT_JSON": "{\"private_key\":\"fake-key\",\"client_email\":\"fake@example.test\",\"project_id\":\"credential-project\"}",
+            "FIREBASE_SERVICE_ACCOUNT_PATH": "ignored.json"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "invalid-credential"
+        }
+      ],
+      "calls": [
+        "cert:credential-project"
+      ],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "default-failure",
+        "fail": "default",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "backend-failure"
+        }
+      ],
+      "calls": [
+        "default"
+      ],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "get-apps-failure",
+        "fail": "getApps",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "backend-failure"
+        }
+      ],
+      "calls": [
+        "default",
+        "getApps"
+      ],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "get-app-failure",
+        "existing": true,
+        "fail": "getApp",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "backend-failure"
+        }
+      ],
+      "calls": [
+        "default",
+        "getApps",
+        "getApp"
+      ],
+      "messaging": null
+    },
+    {
+      "input": {
+        "name": "init-failure",
+        "fail": "init",
+        "steps": [
+          {
+            "ENABLE_FIREBASE": "true",
+            "FIREBASE_PROJECT_ID": "project"
+          }
+        ]
+      },
+      "results": [
+        {
+          "app": null,
+          "error": "backend-failure"
+        }
+      ],
+      "calls": [
+        "default",
+        "getApps",
+        "initialize:project"
+      ],
+      "messaging": null
+    }
+  ]
+}

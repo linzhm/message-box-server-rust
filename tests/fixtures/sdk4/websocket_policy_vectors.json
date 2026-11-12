@@ -1,0 +1,186 @@
+{
+  "identity": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+  "claims": [
+    {
+      "input": {
+        "transport": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+      },
+      "result": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+    },
+    {
+      "input": {
+        "transport": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "claim": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+      },
+      "result": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+    },
+    {
+      "input": {
+        "transport": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "claim": " 02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5 "
+      },
+      "result": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+    },
+    {
+      "input": {
+        "transport": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "claim": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9"
+      },
+      "error": "Identity claim does not match authenticated peer"
+    },
+    {
+      "input": {
+        "transport": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "claim": 42
+      },
+      "result": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+    },
+    {
+      "input": {
+        "transport": null
+      },
+      "error": "Authenticated peer identity is unavailable"
+    },
+    {
+      "input": {
+        "transport": "not-a-key"
+      },
+      "error": "Invalid authenticated identity key"
+    },
+    {
+      "input": {
+        "transport": "04c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee51ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a"
+      },
+      "result": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+    },
+    {
+      "input": {
+        "transport": "02C6047F9441ED7D6D3045406E95C07CD85C778E4B8CEF3CA7ABAC09B95C709EE5"
+      },
+      "result": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+    },
+    {
+      "input": {
+        "transport": "2c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+      },
+      "result": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+    },
+    {
+      "input": {
+        "transport": "06c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee51ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a"
+      },
+      "result": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+    },
+    {
+      "input": {
+        "transport": "07fff97bd5755eeea420453a14355235d382f6472f8568a18b2f057a1460297556ae12777aacfbb620f3be96017f45c560de80f0f6518fe4a03c870c36b075f297"
+      },
+      "result": "03fff97bd5755eeea420453a14355235d382f6472f8568a18b2f057a1460297556"
+    },
+    {
+      "input": {
+        "transport": "07c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee51ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a"
+      },
+      "error": "Invalid authenticated identity key"
+    }
+  ],
+  "rooms": [
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-inbox",
+      "owned": true,
+      "box": "inbox"
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-payment_inbox",
+      "owned": true,
+      "box": "payment_inbox"
+    },
+    {
+      "room": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9-inbox",
+      "owned": false,
+      "box": null
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-",
+      "owned": false,
+      "box": null
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5- inbox",
+      "owned": false,
+      "box": null
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-inbox\n",
+      "owned": false,
+      "box": null
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "owned": true,
+      "box": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "owned": false,
+      "box": null
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫",
+      "owned": true,
+      "box": "猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫"
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫",
+      "owned": false,
+      "box": null
+    },
+    {
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-box-1",
+      "owned": true,
+      "box": "box-1"
+    },
+    {
+      "room": null,
+      "owned": false,
+      "box": null
+    },
+    {
+      "room": 42,
+      "owned": false,
+      "box": null
+    },
+    {
+      "room": "",
+      "owned": false,
+      "box": null
+    }
+  ],
+  "recipients": [
+    {
+      "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+      "room": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5-inbox",
+      "box": "inbox"
+    },
+    {
+      "recipient": "02C6047F9441ED7D6D3045406E95C07CD85C778E4B8CEF3CA7ABAC09B95C709EE5",
+      "room": "02C6047F9441ED7D6D3045406E95C07CD85C778E4B8CEF3CA7ABAC09B95C709EE5-inbox",
+      "box": null
+    },
+    {
+      "recipient": "04c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee51ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a",
+      "room": "04c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee51ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a-inbox",
+      "box": null
+    },
+    {
+      "recipient": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+      "room": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9-inbox",
+      "box": "inbox"
+    },
+    {
+      "recipient": "nope",
+      "room": "nope-inbox",
+      "box": null
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "rates": [
+    {
+      "limit": 2,
+      "start": 100,
+      "times": [
+        100,
+        101,
+        59999,
+        60099,
+        60100,
+        60101,
+        120100
+      ],
+      "results": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "limit": -1,
+      "start": 0,
+      "times": [
+        0,
+        1,
+        2,
+        60000
+      ],
+      "results": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "limit": 0,
+      "start": 0,
+      "times": [
+        0,
+        60000
+      ],
+      "results": [
+        false,
+        false
+      ]
+    }
+  ],
+  "sourceBlob": "bc37053bf8bdab315e59feabdead368f99c155dd",
+  "results": [
+    {
+      "operation": [
+        "register",
+        "a",
+        2
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "register",
+        "b",
+        2
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "register",
+        "c",
+        2
+      ],
+      "result": false
+    },
+    {
+      "operation": [
+        "join",
+        "a",
+        "room",
+        2
+      ],
+      "result": false
+    },
+    {
+      "operation": [
+        "authenticate",
+        "a",
+        "alice",
+        1
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "authenticate",
+        "a",
+        "alice",
+        1
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "authenticate",
+        "a",
+        "bob",
+        1
+      ],
+      "result": false
+    },
+    {
+      "operation": [
+        "authenticate",
+        "b",
+        "alice",
+        1
+      ],
+      "result": false
+    },
+    {
+      "operation": [
+        "authenticate",
+        "b",
+        "bob",
+        1
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "join",
+        "a",
+        "room",
+        1
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "join",
+        "a",
+        "room",
+        1
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "join",
+        "a",
+        "room2",
+        1
+      ],
+      "result": false
+    },
+    {
+      "operation": [
+        "join",
+        "b",
+        "room",
+        1
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "select",
+        "alice",
+        "room",
+        1
+      ],
+      "result": [
+        "a"
+      ]
+    },
+    {
+      "operation": [
+        "select",
+        "bob",
+        "room",
+        1
+      ],
+      "result": [
+        "b"
+      ]
+    },
+    {
+      "operation": [
+        "disconnect",
+        "a"
+      ],
+      "result": null
+    },
+    {
+      "operation": [
+        "register",
+        "c",
+        2
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "authenticate",
+        "c",
+        "alice",
+        3
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "join",
+        "c",
+        "room",
+        2
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "register",
+        "d",
+        -1
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "authenticate",
+        "d",
+        "alice",
+        3
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "join",
+        "d",
+        "room",
+        2
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "register",
+        "e",
+        -1
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "authenticate",
+        "e",
+        "alice",
+        3
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "join",
+        "e",
+        "room",
+        2
+      ],
+      "result": true
+    },
+    {
+      "operation": [
+        "select",
+        "alice",
+        "room",
+        2
+      ],
+      "result": [
+        "d",
+        "e"
+      ]
+    },
+    {
+      "operation": [
+        "select",
+        "alice",
+        "room",
+        -1
+      ],
+      "result": [
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "operation": [
+        "select",
+        "alice",
+        "room",
+        0
+      ],
+      "result": [
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "operation": [
+        "leave",
+        "d",
+        "room"
+      ],
+      "result": null
+    },
+    {
+      "operation": [
+        "select",
+        "alice",
+        "room",
+        2
+      ],
+      "result": [
+        "c",
+        "e"
+      ]
+    },
+    {
+      "operation": [
+        "state",
+        "d"
+      ],
+      "result": {
+        "authenticated": true,
+        "identity": "alice",
+        "rooms": 0,
+        "connections": 4
+      }
+    },
+    {
+      "operation": [
+        "state",
+        "a"
+      ],
+      "result": {
+        "authenticated": false,
+        "identity": null,
+        "rooms": 0,
+        "connections": 4
+      }
+    },
+    {
+      "operation": [
+        "sockets"
+      ],
+      "result": [
+        "b",
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "operation": [
+        "clear"
+      ],
+      "result": null
+    },
+    {
+      "operation": [
+        "sockets"
+      ],
+      "result": []
+    }
+  ]
+}

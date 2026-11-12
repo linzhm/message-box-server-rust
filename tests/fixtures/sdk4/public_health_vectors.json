@@ -1,0 +1,51 @@
+{
+  "sourceBlob": "4705557d2b78a27f52ccf0ec507619df08df41fb",
+  "cases": {
+    "health": {
+      "headers": {
+        "cache-control": "no-store"
+      },
+      "status": 200,
+      "body": {
+        "ok": true,
+        "status": "ok",
+        "service": "messagebox-server",
+        "network": "testnet",
+        "websockets": false
+      }
+    },
+    "healthz": {
+      "headers": {
+        "cache-control": "no-store"
+      },
+      "status": 200,
+      "body": {
+        "ok": true,
+        "status": "ok",
+        "service": "messagebox-server",
+        "network": "testnet",
+        "websockets": false
+      }
+    },
+    "ready": {
+      "headers": {
+        "cache-control": "no-store"
+      },
+      "status": 200,
+      "body": {
+        "status": "ready"
+      }
+    },
+    "notReady": {
+      "headers": {
+        "cache-control": "no-store"
+      },
+      "status": 503,
+      "body": {
+        "status": "error",
+        "code": "ERR_NOT_READY",
+        "description": "Message Box dependencies are not ready."
+      }
+    }
+  }
+}

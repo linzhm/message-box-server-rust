@@ -1,0 +1,336 @@
+{
+  "sourceBlob": "1279ce37c009e1cc37419824673f1ac4403b0510",
+  "cases": [
+    {
+      "label": "exact",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 10,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": null,
+      "verifierCalled": true
+    },
+    {
+      "label": "over",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 11,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": null,
+      "verifierCalled": true
+    },
+    {
+      "label": "insufficient",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 9,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": "ERR_INSUFFICIENT_RECIPIENT_PAYMENT",
+      "verifierCalled": false
+    },
+    {
+      "label": "wrong-script",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 10,
+            "script": "51"
+          }
+        ]
+      },
+      "expected": "ERR_INVALID_RECIPIENT_PAYMENT",
+      "verifierCalled": false
+    },
+    {
+      "label": "no-output",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": []
+      },
+      "expected": "ERR_INVALID_RECIPIENT_PAYMENT",
+      "verifierCalled": false
+    },
+    {
+      "label": "missing",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [],
+        "transactionOutputs": [
+          {
+            "satoshis": 10,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": "ERR_MISSING_RECIPIENT_OUTPUTS",
+      "verifierCalled": false
+    },
+    {
+      "label": "bad-protocol",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "basket insertion",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 10,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": "ERR_INVALID_RECIPIENT_PAYMENT",
+      "verifierCalled": false
+    },
+    {
+      "label": "bad-token",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AB==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 10,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": "ERR_INVALID_RECIPIENT_PAYMENT",
+      "verifierCalled": false
+    },
+    {
+      "label": "wrong-sender",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 10,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": "ERR_INVALID_RECIPIENT_PAYMENT",
+      "verifierCalled": false
+    },
+    {
+      "label": "duplicate",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          },
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 10,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": "ERR_INVALID_RECIPIENT_PAYMENT",
+      "verifierCalled": false
+    },
+    {
+      "label": "server-index-reuse",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": 0,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 10,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": "ERR_INVALID_RECIPIENT_PAYMENT",
+      "verifierCalled": false
+    },
+    {
+      "label": "two-split",
+      "input": {
+        "recipient": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+        "fee": 10,
+        "deliveryIndex": null,
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          },
+          {
+            "outputIndex": 1,
+            "protocol": "wallet payment",
+            "paymentRemittance": {
+              "derivationPrefix": "AQ==",
+              "derivationSuffix": "Ag==",
+              "senderIdentityKey": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798"
+            }
+          }
+        ],
+        "transactionOutputs": [
+          {
+            "satoshis": 4,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          },
+          {
+            "satoshis": 6,
+            "script": "76a9147a2c968bdc62187772ca350fe69c0f6c2811bd4a88ac"
+          }
+        ]
+      },
+      "expected": null,
+      "verifierCalled": true
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "sourceBlob": "c66270dafcc619b7d4f3de16d06e94ccbc143940",
+  "cases": [
+    {
+      "value": null,
+      "expected": false
+    },
+    {
+      "value": [],
+      "expected": false
+    },
+    {
+      "value": {},
+      "expected": false
+    },
+    {
+      "value": true,
+      "expected": false
+    },
+    {
+      "value": {
+        "accepted": true
+      },
+      "expected": true
+    },
+    {
+      "value": {
+        "accepted": true,
+        "isMerge": false
+      },
+      "expected": true
+    },
+    {
+      "value": {
+        "accepted": true,
+        "isMerge": true
+      },
+      "expected": false
+    },
+    {
+      "value": {
+        "accepted": true,
+        "isMerge": null
+      },
+      "expected": false
+    },
+    {
+      "value": {
+        "accepted": false
+      },
+      "expected": false
+    },
+    {
+      "value": {
+        "accepted": "true"
+      },
+      "expected": false
+    },
+    {
+      "value": {
+        "accepted": 1
+      },
+      "expected": false
+    },
+    {
+      "value": {
+        "accepted": true,
+        "extra": "ignored"
+      },
+      "expected": true
+    }
+  ]
+}

@@ -1,0 +1,2149 @@
+{
+  "sourceBlob": "1279ce37c009e1cc37419824673f1ac4403b0510",
+  "cases": [
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "3860d18811a03d2bde79bd045e41b62709a928c04eeaa75977e265fc25a234d4"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "猫 😀\n\t\"\\\u0000\b\f\r"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"猫 😀\\n\\t\\\"\\\\\\u0000\\b\\f\\r\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "f25354d61fbd5bcc9d7a2ea7f8b475e13cc68a20a4d36d457569db2bfc624b31"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "a",
+            "b"
+          ],
+          "messageIds": [
+            "one",
+            "two"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            },
+            {
+              "outputIndex": 1,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Aw==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"a\",\"b\"],\"messageIds\":[\"one\",\"two\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}},{\"outputIndex\":1,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Aw==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "08ec0263ba1a665a9a97abdfd68dc1706fee48664b92abe0ed4158367f8905ff"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": ""
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"\"}}",
+      "digest": "fe4a3dfbc7cb4f3e0df819b0401270d5fe05819afd8d493aa0ad93dbe3a5fe70"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 9007199254740991,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":9007199254740991,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "ff448c622fe65daa9221cba5d70c2b25336adf99d2408e0f60076d3ed87ab001"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "通知 ",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "line break"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            42
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"通知 \",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"line break\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"Kg==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "3a98773fb41f017447afb3a24d436b0779e24deab63f905d0034c07010995b77"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ]
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}]}}",
+      "digest": "d6588099503239d771a83d9ded1f6f4d4a050bd07f56045f1bc1bdce666b3fce"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": null
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":null}}",
+      "digest": "cdaf689b3eeab77209d3fc77b4ce196453f7aeecb85192fb8bcf9c5bd9d26b2e"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message",
+          "labels": [],
+          "seekPermission": true
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\",\"labels\":[],\"seekPermission\":true}}",
+      "digest": "2536134fd863832edb3de77df1a1414a3726d4ae020ef000d1768d8a85a6d41a"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message",
+          "labels": [
+            "a",
+            "猫",
+            "\n"
+          ],
+          "seekPermission": false
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\",\"labels\":[\"a\",\"猫\",\"\\n\"],\"seekPermission\":false}}",
+      "digest": "2f0ff5730f17fb6b680bbc2e2f5ace6463800b1114265d40102b9fe8087321ed"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message",
+          "seekPermission": null
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\",\"seekPermission\":null}}",
+      "digest": "8b9d8cccdde6496b1de66b9664cdf1348dd5ef2bc4d6f562dd49b0bea5007b71"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              },
+              "customInstructions": "recipient metadata"
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"},\"customInstructions\":\"recipient metadata\"}],\"description\":\"Payment for message\"}}",
+      "digest": "18ea0224d3b21cc6324fa59e8643b629278601b755e3269bc5c086f925e1e240"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              },
+              "customInstructions": null
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"},\"customInstructions\":null}],\"description\":\"Payment for message\"}}",
+      "digest": "f3fcc4023bce7ac56fe79313bdcb5655a642705441dd1efb9893e894ab904899"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc",
+                "customInstructions": "\"quoted\"\n猫"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\",\"customInstructions\":\"\\\"quoted\\\"\\n猫\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "84201e3f7a00f51439d9016613da6213b2d1e8add41cd16c73c2a14c31b35332"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "hello"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc",
+                "customInstructions": null
+              },
+              "customInstructions": "{\"recipient\":\"alice\"}"
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"hello\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\",\"customInstructions\":null},\"customInstructions\":\"{\\\"recipient\\\":\\\"alice\\\"}\"}],\"description\":\"Payment for message\"}}",
+      "digest": "708afc0a0f0fe00b7958b21b28751710eace4f2001d65fd9996367ae4d67eb81"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0000after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0000after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "9f5cd4ca98405e7d1d1d282ad5bc047b8c35ebc29c95e60bccb594c0b24bfb57"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0001after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0001after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "522cb2070fbf7f7d02aad61ef36b0d71bdea88f3bc7cd9d0958104e65f5629fa"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0002after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0002after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "c3dac80d545627a1699566fabb00c14df7fabee2c57345487fe6a613242c257f"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0003after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0003after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "ece1dceb853256fb5133b8179c9a16d22d2b0d91976122f364d9fcf84707a220"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0004after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0004after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "4bd1d55c43fc37d9fbaeccdc6d1c5964734018231ff792a005a3167b44b0e544"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0005after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0005after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "91b5f4c91f6dbf1815b28591c666602f69a8722200575806488590f19af4b930"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0006after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0006after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "d0215b6d6772dcf12ab4d0322c1bdcdb2c4df1f3b4225ab7f168606dc2c07898"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0007after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0007after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "d153b984b07722330e6e5611c6474cb4e59022cb29308565b39f707df52c4ac3"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\bafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\bafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "312ad86c59819214893fb643e2aebcfcf5692b819a8fff44b41cd39c9807b5a7"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\tafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\tafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "f06f77fa815d858fa17f024d463ae7162a34da0272599ddc6a71e6c87031f8a5"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\nafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\nafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "777acfe45210a413d3c4d9a40c920eae37b1eeb156c21fa2b6df410dc1b3ba45"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u000bafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u000bafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "4a0b612db32c1d18aab2ab8a5cfaf8cf7f58d10d4d8c767771467d4c8552d689"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\fafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\fafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "c0896bd7f0d1945190bf1c6be6436533ed96ad14f3e65039131c7739a98981cd"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\rafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\rafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "01f0424843b0420f0ce8f59597738f4364f34e37dd41ac53a6191bc14b8b2dc6"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u000eafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u000eafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "ab7df214977055341493a02a28d469458f1ddf8d9c73c4f37086f2b7468b36fc"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u000fafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u000fafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "4e67d3225e7c40b49b73cba68c4f6cc8b2dd8b63181d0b8e8024c5ce25fcd95e"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0010after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0010after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "d61e35f18d684de1a270e4eb9d106612e793f1a46df2b7d6e26fba2dd8e8ce8f"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0011after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0011after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "d551b8594394234b6703e1da814e2f8f9698f712a7025a52365b22b3f0493cfe"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0012after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0012after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "c952911c4748ea2f1ba134168eacb392bf080f44749eb929e8e1b2d019efd2df"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0013after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0013after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "fe236d196c8b084406d8c4ee35f2abe0a237825726ce6be7b1303aff8ff1374a"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0014after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0014after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "324a780be3f5dec10e2bfdbfb866f81bbf426c42344f5336ed38319802226aed"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0015after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0015after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "ac2a03b2357f774acdeb79d6c630ac9e0d3cf1cb61060bb2bc3e730c6fca41b5"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0016after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0016after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "2aa6fb2440e6d31354ae55044291459488ce26f04b4911357cc7a6d294a94b12"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0017after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0017after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "340a4001f114ee3b363e7f1f7f0cf9068c3641288b7c09f917b2902df6390cd0"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0018after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0018after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "2fafeee89fbc87f974d7025aeb56599d50fc9ec2a664f86c796baaa109a8f2c8"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u0019after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u0019after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "5c6d90bea633cf279a86c5d6857f0c45ed1a10eea134159070dee7764644c4f1"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u001aafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u001aafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "480cf7126841b98d062441169bbeb3bc9f6ab5835f406f07cc4689064899843e"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u001bafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u001bafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "d5ed70f3c74bcd6945cd12b16c0121908837f70189695c56a78c89a5fb1c9f4b"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u001cafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u001cafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "c0b27f25b500cc8a1a29985893a47061668b93d03d27d322e604107fa4d450a6"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u001dafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u001dafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "f12220bd0962b8d96c57c3bf181d3db27bae41acb9a9092e60b22ce1b9a94d98"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u001eafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u001eafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "dbfe37f579ec0e4e8b4ca52c119eb16d53e3d9a2700e266a8aeb94830bb18f3f"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before\u001fafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before\\u001fafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "a81b29c2366d77fb164066bfac52f75feb2dc9a6f926465b4300b8cb07c48048"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "beforeafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"beforeafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "a4bccecbfbe1ac5ba057cba3a50d57a827e2491526593ad1f5bf125bcba0df40"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "beforeafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"beforeafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "fa854238da85c074d8a05df3504a2183cd87be1fa3288a9ebbc722b6b884cb5d"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before߿after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before߿after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "ca409d9e65c14b573b71768590fae59296e7fb7550860d267bd71f5d3985a3f0"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "beforeࠀafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"beforeࠀafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "bd5df3ec7f9da2b5648694b72f5905707cf1c3e0046e150e6bf3b0415e5f3d47"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before퟿after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before퟿after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "75f7efa2fcbc9acca7452e3a4b74e3bb4f43f38e48462e66ad67fb5ecc48036e"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "beforeafter"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"beforeafter\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "c90581c4024ca0fbcb48a074052b57f6a894b425f3fa9ace7c554c3434073fba"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before￿after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before￿after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "1726ba472c4ab96d5bdeec8f3658487dbf542126f5d27bb936820a4fd830682f"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before𐀀after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before𐀀after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "c6b95be23f7e59f52eb71a5a07aa0fef092ca3831a1af5fc0ea6d3f75a769498"
+    },
+    {
+      "input": {
+        "sender": "02sender",
+        "message": {
+          "boxType": "inbox",
+          "recipients": [
+            "02recipient"
+          ],
+          "messageIds": [
+            "m-1"
+          ],
+          "body": "before􏿿after"
+        },
+        "payment": {
+          "transactionId": "abc123",
+          "tx": [
+            0,
+            1,
+            2,
+            255
+          ],
+          "outputs": [
+            {
+              "outputIndex": 0,
+              "protocol": "wallet payment",
+              "paymentRemittance": {
+                "derivationPrefix": "AQ==",
+                "derivationSuffix": "Ag==",
+                "senderIdentityKey": "02abc"
+              }
+            }
+          ],
+          "description": "Payment for message"
+        }
+      },
+      "preimage": "{\"version\":1,\"sender\":\"02sender\",\"message\":{\"boxType\":\"inbox\",\"recipients\":[\"02recipient\"],\"messageIds\":[\"m-1\"],\"body\":\"before􏿿after\"},\"payment\":{\"transactionId\":\"abc123\",\"atomicBEEF\":\"AAEC/w==\",\"outputs\":[{\"outputIndex\":0,\"protocol\":\"wallet payment\",\"paymentRemittance\":{\"derivationPrefix\":\"AQ==\",\"derivationSuffix\":\"Ag==\",\"senderIdentityKey\":\"02abc\"}}],\"description\":\"Payment for message\"}}",
+      "digest": "4bb8a31e70c0808a38317c01494638421c6369f93938c99042d67c8cc9620b2b"
+    }
+  ]
+}

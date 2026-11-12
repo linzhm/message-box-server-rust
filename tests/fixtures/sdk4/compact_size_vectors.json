@@ -1,0 +1,108 @@
+{
+  "source": "SDK 4.0.1 @ ts-stack 52d36a5 ReaderUint8Array.readVarIntNumStrict(false)",
+  "cases": [
+    {
+      "hex": "",
+      "expected": null
+    },
+    {
+      "hex": "00",
+      "expected": {
+        "value": 0,
+        "consumed": 1
+      }
+    },
+    {
+      "hex": "fc",
+      "expected": {
+        "value": 252,
+        "consumed": 1
+      }
+    },
+    {
+      "hex": "fdfc00",
+      "expected": null
+    },
+    {
+      "hex": "fdfd00",
+      "expected": {
+        "value": 253,
+        "consumed": 3
+      }
+    },
+    {
+      "hex": "fdffff",
+      "expected": {
+        "value": 65535,
+        "consumed": 3
+      }
+    },
+    {
+      "hex": "feffff0000",
+      "expected": null
+    },
+    {
+      "hex": "fe00000100",
+      "expected": {
+        "value": 65536,
+        "consumed": 5
+      }
+    },
+    {
+      "hex": "feffffffff",
+      "expected": {
+        "value": 4294967295,
+        "consumed": 5
+      }
+    },
+    {
+      "hex": "ffffffffff00000000",
+      "expected": null
+    },
+    {
+      "hex": "ff0000000001000000",
+      "expected": {
+        "value": 4294967296,
+        "consumed": 9
+      }
+    },
+    {
+      "hex": "ffffffffffffff1f00",
+      "expected": {
+        "value": 9007199254740991,
+        "consumed": 9
+      }
+    },
+    {
+      "hex": "ff0000000000002000",
+      "expected": null
+    },
+    {
+      "hex": "ffffffffffffffffff",
+      "expected": null
+    },
+    {
+      "hex": "fd",
+      "expected": null
+    },
+    {
+      "hex": "fd01",
+      "expected": null
+    },
+    {
+      "hex": "fe0000",
+      "expected": null
+    },
+    {
+      "hex": "ff0000000000",
+      "expected": null
+    },
+    {
+      "hex": "fdfd00aabb",
+      "expected": {
+        "value": 253,
+        "consumed": 3
+      }
+    }
+  ]
+}

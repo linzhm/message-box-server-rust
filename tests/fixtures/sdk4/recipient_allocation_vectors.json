@@ -1,0 +1,300 @@
+{
+  "sourceBlob": "1279ce37c009e1cc37419824673f1ac4403b0510",
+  "cases": [
+    {
+      "label": "positional",
+      "input": {
+        "feeRecipients": [
+          "a",
+          "b"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0
+          },
+          {
+            "outputIndex": 1
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "label": "too-few",
+      "input": {
+        "feeRecipients": [
+          "a",
+          "b"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0
+          }
+        ]
+      },
+      "expected": {
+        "error": "ERR_INSUFFICIENT_OUTPUTS"
+      }
+    },
+    {
+      "label": "reordered-tags",
+      "input": {
+        "feeRecipients": [
+          "a",
+          "b"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "customInstructions": "{\"recipientIdentityKey\":\"b\"}"
+          },
+          {
+            "outputIndex": 1,
+            "customInstructions": "{\"recipientIdentityKey\":\"a\"}"
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "mixed",
+      "input": {
+        "feeRecipients": [
+          "a",
+          "b"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "customInstructions": "{\"recipientIdentityKey\":\"b\"}"
+          },
+          {
+            "outputIndex": 1
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "unknown-tag-consumes",
+      "input": {
+        "feeRecipients": [
+          "a"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "customInstructions": "{\"recipientIdentityKey\":\"other\"}"
+          }
+        ]
+      },
+      "expected": {
+        "error": "ERR_INSUFFICIENT_OUTPUTS"
+      }
+    },
+    {
+      "label": "multiple-tagged",
+      "input": {
+        "feeRecipients": [
+          "a"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "customInstructions": "{\"recipientIdentityKey\":\"a\"}"
+          },
+          {
+            "outputIndex": 1,
+            "customInstructions": {
+              "recipientIdentityKey": "a"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "label": "malformed-is-untagged",
+      "input": {
+        "feeRecipients": [
+          "a"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "customInstructions": "{bad"
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "nullish-fallback",
+      "input": {
+        "feeRecipients": [
+          "a"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "insertionRemittance": {
+              "customInstructions": null
+            },
+            "paymentRemittance": {
+              "customInstructions": "{\"recipientIdentityKey\":\"a\"}"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "precedence",
+      "input": {
+        "feeRecipients": [
+          "a",
+          "b"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "insertionRemittance": {
+              "customInstructions": "{\"recipientIdentityKey\":\"b\"}"
+            },
+            "paymentRemittance": {
+              "customInstructions": "{\"recipientIdentityKey\":\"a\"}"
+            }
+          },
+          {
+            "outputIndex": 1
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "nonempty-not-trimmed",
+      "input": {
+        "feeRecipients": [
+          "a"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "customInstructions": "{\"recipientIdentityKey\":\" a \"}"
+          }
+        ]
+      },
+      "expected": {
+        "error": "ERR_INSUFFICIENT_OUTPUTS"
+      }
+    },
+    {
+      "label": "only-whitespace-is-untagged",
+      "input": {
+        "feeRecipients": [
+          "a"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "customInstructions": "{\"recipientIdentityKey\":\" ﻿\"}"
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "duplicate-indices-reserved",
+      "input": {
+        "feeRecipients": [
+          "a",
+          "b"
+        ],
+        "outputs": [
+          {
+            "outputIndex": 0,
+            "customInstructions": "{\"recipientIdentityKey\":\"a\"}"
+          },
+          {
+            "outputIndex": 0
+          },
+          {
+            "outputIndex": 1
+          }
+        ]
+      },
+      "expected": {
+        "alloc": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ]
+      }
+    }
+  ]
+}

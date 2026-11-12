@@ -1,0 +1,43 @@
+{
+  "source": "ts-stack 52d36a5, SDK 4.0.1 ProtoWallet TypeScript source; fixed public test keys only",
+  "cases": [
+    {
+      "a": "2",
+      "b": "3",
+      "keyID": "nonceA nonceB",
+      "invoice": "2-auth message signature-nonceA nonceB",
+      "data": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "alicePublic": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+      "bobPublic": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+      "signature": "3045022100e904b40853aebe51fe1b2dc3c0980de010cd00785c55e83010d01e299550584f0220305120ac422661a4697549bf3d6e44175e8c07676ce76909ee3877344d67fc3b",
+      "highSignature": "3046022100e904b40853aebe51fe1b2dc3c0980de010cd00785c55e83010d01e299550584f022100cfaedf53bdd99e5b968ab640c291bbe75c22d57f42613731d199e75882ce4506",
+      "standardValid": true,
+      "highValid": true
+    },
+    {
+      "a": "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "b": "fedcba0987654321fedcba0987654321fedcba0987654321fedcba098765432",
+      "keyID": "shared-key-α🙂",
+      "invoice": "2-auth message signature-shared-key-α🙂",
+      "data": [
+        104,
+        101,
+        108,
+        108,
+        111
+      ],
+      "alicePublic": "02bb50e2d89a4ed70663d080659fe0ad4b9bc3e06c17a227433966cb59ceee020d",
+      "bobPublic": "03baf15459d19a2eefb303d24514e915326d954c562e24f2b216e1a0b868c5fe0b",
+      "signature": "3044022056fcb937fd2571e7c7a5106da96633aa268c70ed688ed7e73e4b7abb301eebf902202d0df703a9a67c9346c58734ee0b7fcb816741efedda2dbcbfb36218cb78173c",
+      "highSignature": "3045022056fcb937fd2571e7c7a5106da96633aa268c70ed688ed7e73e4b7abb301eebf9022100d2f208fc5659836cb93a78cb11f4803339479af6c16e727f001efc7404be2a05",
+      "standardValid": true,
+      "highValid": true
+    }
+  ]
+}

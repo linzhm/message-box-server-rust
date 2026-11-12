@@ -1,0 +1,493 @@
+{
+  "source": "SDK 4.0.1 @ ts-stack 52d36a5 Beef.fromBinaryStrict plus inspected entries, synthetic/unfunded; limited subset",
+  "vectors": [
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000015100000000",
+      "sdkParsedAndInspected": true,
+      "expected": {
+        "atomicTxid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "version": 4022206466,
+        "entries": [
+          {
+            "kind": "raw",
+            "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+            "inputs": [],
+            "outputs": [
+              {
+                "satoshis": 1,
+                "script": "51"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0100beef0001010000000001010000000000000001510000000000",
+      "sdkParsedAndInspected": true,
+      "expected": {
+        "atomicTxid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "version": 4022206465,
+        "entries": [
+          {
+            "kind": "raw",
+            "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+            "inputs": [],
+            "outputs": [
+              {
+                "satoshis": 1,
+                "script": "51"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010214180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf",
+      "sdkParsedAndInspected": true,
+      "expected": {
+        "atomicTxid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "version": 4022206466,
+        "entries": [
+          {
+            "kind": "txid-only",
+            "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814"
+          }
+        ]
+      }
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0000",
+      "sdkParsedAndInspected": true,
+      "expected": {
+        "atomicTxid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "version": 4022206466,
+        "entries": []
+      }
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00020001000000000101000000000000000151000000000214180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf",
+      "sdkParsedAndInspected": true,
+      "expected": {
+        "atomicTxid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "version": 4022206466,
+        "entries": [
+          {
+            "kind": "raw",
+            "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+            "inputs": [],
+            "outputs": [
+              {
+                "satoshis": 1,
+                "script": "51"
+              }
+            ]
+          },
+          {
+            "kind": "txid-only",
+            "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814"
+          }
+        ]
+      }
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0002000100000000010100000000000000015100000000000100000000010100000000000000015100000000",
+      "sdkParsedAndInspected": true,
+      "expected": {
+        "atomicTxid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+        "version": 4022206466,
+        "entries": [
+          {
+            "kind": "raw",
+            "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+            "inputs": [],
+            "outputs": [
+              {
+                "satoshis": 1,
+                "script": "51"
+              }
+            ]
+          },
+          {
+            "kind": "raw",
+            "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+            "inputs": [],
+            "outputs": [
+              {
+                "satoshis": 1,
+                "script": "51"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "hex": "0101010100000000000000000000000000000000000000000000000000000000000000000200beef0001000100000000010100000000000000015100000000",
+      "sdkParsedAndInspected": true,
+      "expected": {
+        "atomicTxid": "0000000000000000000000000000000000000000000000000000000000000000",
+        "version": 4022206466,
+        "entries": [
+          {
+            "kind": "raw",
+            "txid": "cfe49d8f1ce145622642badc66cc70665a69a6cfc2376ef3499e2c8392001814",
+            "inputs": [],
+            "outputs": [
+              {
+                "satoshis": 1,
+                "script": "51"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0100beef000101000000000101000000000000000151000000000100",
+      "sdkParsedAndInspected": true,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000101000100000000010100000000000000015100000000",
+      "sdkParsedAndInspected": true,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef01000101000214180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf00",
+      "sdkParsedAndInspected": true,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000000000000001510000000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0200beef0001000100000000010100000000000000015100000000",
+      "sdkParsedAndInspected": true,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001030100000000010100000000000000015100000000",
+      "sdkParsedAndInspected": true,
+      "expected": null
+    },
+    {
+      "hex": "",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "01",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "010101",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "01010101",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "010101011418",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "01010101141800",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "010101011418009283",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f3",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cf",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa669",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a66",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dc",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba4226",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba422662",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e1",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9d",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf02",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200be",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101000000000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000000000000001",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101000000000000000151",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef0001000100000000010100000000000000015100",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef000100010000000001010000000000000001510000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    },
+    {
+      "hex": "0101010114180092832c9e49f36e37c2cfa6695a6670cc66dcba42266245e11c8f9de4cf0200beef00010001000000000101000000000000000151000000",
+      "sdkParsedAndInspected": false,
+      "expected": null
+    }
+  ]
+}

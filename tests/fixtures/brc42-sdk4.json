@@ -1,0 +1,35 @@
+{
+  "source": "ts-stack 52d36a5, packages/sdk 4.0.1 TypeScript source, transpileModule 5.0.2; small public test keys only",
+  "cases": [
+    {
+      "a": 2,
+      "b": 3,
+      "invoice": "2-auth message signature-test",
+      "alicePublic": "02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+      "bobPublic": "02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+      "derivedPrivate": "ba91c727c74b9b6f64478cfde12b3ea09970a98aedca3435a282f2ae2c9532fa",
+      "derivedPublic": "023f3feb98f975692253a00f7023843ce0770cd59ec80e4fb6074847a1e1fe39c3",
+      "receiverDerivedPublic": "023f3feb98f975692253a00f7023843ce0770cd59ec80e4fb6074847a1e1fe39c3"
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "invoice": "2-server hmac-hello",
+      "alicePublic": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "bobPublic": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+      "derivedPrivate": "6f85811de7e1fcff4a087097078f61723075b7fc4dcd99b0d24c02efbfd0cef7",
+      "derivedPublic": "0343626200943d4a01ad32ca0f4e1fb26d21acb93cb4a0373429951fc48dde812c",
+      "receiverDerivedPublic": "0343626200943d4a01ad32ca0f4e1fb26d21acb93cb4a0373429951fc48dde812c"
+    },
+    {
+      "a": 17,
+      "b": 23,
+      "invoice": "2-auth message signature-α🙂",
+      "alicePublic": "03defdea4cdb677750a420fee807eacf21eb9898ae79b9768766e4faa04a2d4a34",
+      "bobPublic": "032fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+      "derivedPrivate": "be140faadfc635d60e7660afa95e8858f5a778e949de4952e803996e158cac48",
+      "derivedPublic": "0358814d775768554f6f609a73ae09f7943551bfe618441f750ef14cf5cfdc5ca2",
+      "receiverDerivedPublic": "0358814d775768554f6f609a73ae09f7943551bfe618441f750ef14cf5cfdc5ca2"
+    }
+  ]
+}
